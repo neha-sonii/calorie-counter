@@ -27,8 +27,8 @@ function addEntry() {
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
-function calculateCalories(e) {
-    e.preventDefault();
+function calculateCalories(evt) {
+    evt.preventDefault();
     isError = false;
 
     const breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
